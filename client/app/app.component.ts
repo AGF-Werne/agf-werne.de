@@ -3,9 +3,9 @@
  */
 import { Component } from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
-import { Home } from './home/home.component.ts';
-import { About } from './about/about.component.ts';
-import { Impressum } from './impressum/impressum.component.ts';
+import { Home } from './components/home/home.component.ts';
+import { About } from './components/about/about.component.ts';
+import { Impressum } from './components/impressum/impressum.component.ts';
 
 @Component({
     selector: 'agf-app',
@@ -13,7 +13,7 @@ import { Impressum } from './impressum/impressum.component.ts';
         ROUTER_DIRECTIVES
     ],
     template: `
-        <div class="app">
+        <div class="container app">
             <nav>
                 <ul>
                     <li>
