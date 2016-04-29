@@ -4,5 +4,12 @@
     ],
     "files": [
         "app/**/*.ts"
-    ]
+    ],
+    "server": {
+        "baseDir": "client",
+        "index": "index.html",
+        "routes": {
+            "/node_modules": "node_modules"
+        }
+    }
 }
