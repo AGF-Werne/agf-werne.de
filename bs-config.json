@@ -1,0 +1,8 @@
+{
+    "browser": [
+        "google chrome"
+    ],
+    "files": [
+        "app/**/*.ts"
+    ]
+}
