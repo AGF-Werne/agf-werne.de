@@ -1,0 +1,17 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 8pt;
+}
+
+.socialize {
+    width: 110px;
+}
+
+@media screen and (max-height: 340px) {
+    .footer {
+        display: none;
+    }
+}

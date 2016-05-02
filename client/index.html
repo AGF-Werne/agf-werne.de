@@ -1,51 +1,63 @@
-<!doctype html>
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Superfast Angular 2 setup</title>
+    <title>AGF Werne e.V.</title>
 
-        <base href="/">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center">Hallo!</h1>
 
-    </head>
-    <body>
-    
-        <agf-app></agf-app>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <p class="text-center lead">
+                        Dies ist die Webseite des Vereins <strong>Arbeitsgemeinschaft Fl&uuml;chtlinge Werne</strong> und befindet sich momentan noch im Aufbau.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="socialize container">
+        <div class="center-block">
+            <a href="https://www.facebook.com/AGFWerne" target="_blank">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
 
-        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-        <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
-        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-        <script src="node_modules/systemjs/dist/system.src.js"></script>
-        <script src="node_modules/typescript/lib/typescript.js"></script>
-        <script src="node_modules/rxjs/bundles/Rx.js"></script>
-        <script src="node_modules/angular2/bundles/angular2.js"></script>
-        <script src="node_modules/angular2/bundles/router.js"></script>
+            <a href="mailto:agfwerne@gmx.de" target="_top">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+    </div>
 
-        <script>
-            System
-                .config({
-                    transpiler: 'typescript',
-                    typescriptOptions: {
-                    emitDecoratorMetadata: true
-                    },
-                    map: {
-                        app: './app'
-                    },
-                    packages: {
-                        app: {
-                            main: './main.ts',
-                            defaultExtension: 'ts'
-                        }
-                    }
-                });
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted text-center">&copy;&nbsp;2016&nbsp;Arbeitsgemeinschaft&nbsp;Fl&uuml;chtlinge&nbsp;Werne&nbsp;e.V.</p>
+        </div>
+    </div>
 
-            System
-                .import('app')
-                .catch(console.error.bind(console));
-        </script>
-    </body>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Custom -->
+    <script src="js/main.js"></script>
+
+</body>
 </html>
