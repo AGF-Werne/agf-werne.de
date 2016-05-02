@@ -3,7 +3,7 @@
         "google chrome"
     ],
     "files": [
-        "client/**/*.ts"
+        "client/**/*.js"
     ],
     "server": {
         "baseDir": "client",
