@@ -3,17 +3,15 @@
  * @author KloseD
  */
 
-/* global $, marked */
+/* global agf*/
 (function () {
     'use strict';
 
-    var url = 'https://api.github.com/repos/AGF-Werne/articles-of-association/contents/de.md';
+    agf.get('articles-of-association', 'de').then(show);
 
-    return $.get(url, onSuccess);
+    return true;
 
-    function onSuccess (result) {
-        var content = atob(result.content);
-
-        document.getElementById('content').innerHTML = marked(content);
+    function show (result) {
+        return agf.show(result, '#content');
     }
 })();
