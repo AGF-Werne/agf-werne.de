@@ -16,6 +16,5 @@
     "tests"
   ],
   "dependencies": {
-    "marked": "^0.3.5"
   }
 }
