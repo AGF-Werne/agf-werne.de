@@ -23,7 +23,7 @@
     list-style-type: none;
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 500px) {
     .footer {
         display: none;
     }
