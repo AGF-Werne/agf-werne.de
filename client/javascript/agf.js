@@ -64,7 +64,11 @@ window.agf = (function () {
     }
 
     /**
-     *
+     * @name show
+     * @memberof agf
+     * @param {String} what
+     * @param {String} where
+     * @returns {Promise}
      */
     function show (what, where) {
         // Convert Markdown into HTML

@@ -7,7 +7,7 @@
 (function () {
     'use strict';
 
-    agf.get('articles-of-association', 'de').then(show);
+    // agf.get('articles-of-association', 'de').then(show);
 
     return true;
 
