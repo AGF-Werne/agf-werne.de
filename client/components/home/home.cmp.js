@@ -23,8 +23,15 @@
     function controller (__env) {
         var vm = this;
 
-        console.log(__env.mode);
+        return init();
 
-        return true;
+        function init () {
+            var mode = __env.mode;
+            var nav = __env[mode].navigation.main;
+
+            vm.nav = nav;
+
+            return true;
+        }
     }
 })(angular);
