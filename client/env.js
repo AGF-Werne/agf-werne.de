@@ -27,29 +27,75 @@
         navigation: {
             main: [
                 {
-                    name: 'Über uns',
-                    link: '#/',
+                    name: 'Home',
+                    link: '#/'
+                },
+                {
+                    name: '&Uuml;ber uns',
+                    link: '#/about',
                     children: [
                         {
-                            name: 'Das sind wir',
+                            name: 'Vereinssatzung',
                             link: '#/'
                         },
                         {
-                            name: 'Vereinssatzung',
+                            name: 'Vorsitzende',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Mitgliedsantrag',
                             link: '#/'
                         }
                     ]
                 },
                 {
                     name: 'Unsere Arbeit',
-                    link: '#/',
+                    link: '#/projects',
                     children: [
+                        {
+                            name: 'Aktuelles',
+                            link: '#/'
+                        },
                         {
                             name: 'Sprachkurse',
                             link: '#/'
                         },
                         {
                             name: 'Frauen-Café',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Betreuung',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Fahrradwerkstatt',
+                            link: '#/'
+                        }
+                    ]
+                },
+                {
+                    name: 'Kontakt',
+                    link: '#/contact',
+                    children: [
+                        {
+                            name: '&Ouml;ffnungszeiten',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Sprachkurse',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Frauen-Café',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Betreuung',
+                            link: '#/'
+                        },
+                        {
+                            name: 'Fahrradwerkstatt',
                             link: '#/'
                         }
                     ]

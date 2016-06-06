@@ -17,13 +17,21 @@
      * @requires $routeProvider
      * @returns {Boolean}
      */
-    function config ($routeProvider) {
+    function config ($sceProvider, $routeProvider) {
+        $sceProvider.enabled(false);
+
         $routeProvider
             .when('/', {
                 template: '<home></home>'
             })
             .when('/about', {
                 template: '<about></about>'
+            })
+            .when('/projects', {
+                template: '<projects></projects>'
+            })
+            .when('/contact', {
+                template: '<contact></contact>'
             })
             .otherwise({
                 redirectTo: '/'
