@@ -33,6 +33,12 @@
             .when('/contact', {
                 template: '<contact></contact>'
             })
+            .when('/legal', {
+                template: '<legal></legal>'
+            })
+            .when('/statutes', {
+                template: '<statutes></statutes>'
+            })
             .otherwise({
                 redirectTo: '/'
             });
