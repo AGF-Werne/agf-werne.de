@@ -39,6 +39,18 @@
             .when('/statutes', {
                 template: '<statutes></statutes>'
             })
+            .when('/classes', {
+                template: '<classes></classes>'
+            })
+            .when('/care', {
+                template: '<care></care>'
+            })
+            .when('/cafe', {
+                template: '<cafe></cafe>'
+            })
+            .when('/garage', {
+                template: '<garage></garage>'
+            })
             .otherwise({
                 redirectTo: '/'
             });

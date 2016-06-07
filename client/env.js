@@ -27,7 +27,7 @@
         navigation: {
             main: [
                 {
-                    name: 'Home',
+                    name: 'Startseite',
                     link: '#/'
                 },
                 {

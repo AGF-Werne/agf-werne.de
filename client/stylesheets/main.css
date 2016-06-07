@@ -1,15 +1,89 @@
+body {
+    background-color: #2b2b2b;
+}
+
+.content {
+    padding-bottom: 80px;
+    height: 100%;
+    background-color: white;
+}
+
+.home {
+    position: relative;
+}
+
+.home .menu {
+    height: 100px;
+    outline: 1px solid red;
+}
+
+.home .menu .tile {
+    outline: 1px solid;
+}
+
+.home .menu .tile .left {
+    height: 50%;
+}
+
+.about {
+    position: relative;
+}
+
+.about .menu {
+    position: fixed;
+    margin: 119px 0 0 0;
+}
+
+.about .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.projects {
+    position: relative;
+}
+
+.projects .menu {
+    position: fixed;
+    margin: 119px 0 0 0;
+}
+
+.projects .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .footer {
-    position: absolute;
-    bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    bottom: 0;
     width: 100%;
+    color: #eee;
+    background-color: #2b2b2b;
+}
+
+.footer .copyright a {
+    color: white;
+}
+
+.footer .links {
+}
+
+.footer .links a {
+    margin-left: 10px;
+}
+
+.footer .links a:first-child {
+    margin-left: 0;
 }
 
 .footer .copyright {
-    width: 280px;
 }
 
-@media screen and (max-height: 500px) {
-    .footer {
-        display: none;
-    }
-}
+// @media screen and (max-height: 500px) {
+//     .footer {
+//         display: none;
+//     }
+// }
