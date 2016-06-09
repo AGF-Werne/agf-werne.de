@@ -20,7 +20,7 @@
      * @requires __env
      * @returns {Boolean}
      */
-    function controller (__env) {
+    function controller (__env, $location) {
         var vm = this;
 
         return init();
@@ -30,8 +30,13 @@
             var nav = __env[mode].navigation.main;
 
             vm.nav = nav;
+            vm.onClick = onClick;
 
             return true;
+        }
+
+        function onClick (destination) {
+            return $location.path(destination);
         }
     }
 })(angular);
