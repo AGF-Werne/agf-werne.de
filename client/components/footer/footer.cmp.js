@@ -9,7 +9,7 @@
 
     angular
         .module('agf')
-        .component('footer', {
+        .component('agfFooter', {
             templateUrl: 'components/footer/footer.html',
             controller: controller
         });
