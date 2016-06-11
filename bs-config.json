@@ -11,7 +11,8 @@
         "baseDir": "client",
         "index": "index.html",
         "routes": {
-            "/node_modules": "node_modules"
+            "/node_modules": "node_modules",
+            "/assets": "client/assets"
         }
     }
 }
