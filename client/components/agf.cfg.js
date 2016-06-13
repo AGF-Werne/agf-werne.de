@@ -22,7 +22,7 @@
 
         $routeProvider
             .when('/', {
-                template: '<home></home>'
+                template: '<agf-home></agf-home>'
             })
             .when('/about', {
                 template: '<about></about>'
@@ -34,7 +34,7 @@
                 template: '<contact></contact>'
             })
             .when('/legal', {
-                template: '<legal></legal>'
+                template: '<agf-legal></agf-legal>'
             })
             .when('/statutes', {
                 template: '<statutes></statutes>'
