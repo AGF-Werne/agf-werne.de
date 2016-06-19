@@ -1,5 +1,5 @@
 /**
- * @file classes.cmp.js
+ * @file agf-news.cmp.js
  * @namespace Components
  */
 
@@ -9,13 +9,13 @@
 
     angular
         .module('agf')
-        .component('classes', {
-            templateUrl: 'components/classes/classes.html',
+        .component('agfNews', {
+            templateUrl: 'components/agf-news/agf-news.html',
             controller: controller
         });
 
     /**
-     * @namespace classes
+     * @namespace agfNews
      * @memberof Components
      * @requires __env
      * @returns {Boolean}

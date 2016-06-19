@@ -1,5 +1,5 @@
 /**
- * @file statutes.cmp.js
+ * @file agf-statutes.cmp.js
  * @namespace Components
  */
 
@@ -9,13 +9,13 @@
 
     angular
         .module('agf')
-        .component('statutes', {
-            templateUrl: 'components/statutes/statutes.html',
+        .component('agfStatutes', {
+            templateUrl: 'components/agf-statutes/agf-statutes.html',
             controller: controller
         });
 
     /**
-     * @namespace statutes
+     * @namespace agfStatutes
      * @memberof Components
      * @requires __env
      * @returns {Boolean}

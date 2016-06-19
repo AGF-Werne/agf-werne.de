@@ -1,5 +1,5 @@
 /**
- * @file navigation.cmp.js
+ * @file agf-projects.cmp.js
  * @namespace Components
  */
 
@@ -9,18 +9,18 @@
 
     angular
         .module('agf')
-        .component('navigation', {
-            templateUrl: 'components/navigation/navigation.html',
+        .component('agfProjects', {
+            templateUrl: 'components/agf-projects/agf-projects.html',
             controller: controller
         });
 
     /**
-     * @namespace navigation
+     * @namespace agfProjects
      * @memberof Components
      * @requires __env
      * @returns {Boolean}
      */
-    function controller (__env) {
+    function controller (__env, $location) {
         var vm = this;
 
         return init();
@@ -30,6 +30,16 @@
             var nav = __env[mode].navigation.main;
 
             vm.nav = nav;
+
+            if ($location.search().cafe) {
+                console.log('cafe');
+            }
+            else if ($location.search().care) {
+                console.log('care');
+            }
+            else if ($location.search().garage) {
+                console.log('garage');
+            }
 
             return true;
         }

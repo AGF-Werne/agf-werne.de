@@ -31,20 +31,16 @@
                     link: '#/'
                 },
                 {
+                    name: 'Neuigkeiten',
+                    link: '#/news'
+                },
+                {
                     name: '&Uuml;ber uns',
                     link: '#/about',
                     children: [
                         {
                             name: 'Vereinssatzung',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Vorsitzende',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Mitgliedsantrag',
-                            link: '#/'
+                            link: 'statutes'
                         }
                     ]
                 },
@@ -75,27 +71,15 @@
                     ]
                 },
                 {
+                    name: 'Informationen',
+                    link: '#/infos'
+                },
+                {
                     name: 'Kontakt',
                     link: '#/contact',
                     children: [
                         {
                             name: '&Ouml;ffnungszeiten',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Sprachkurse',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Frauen-Café',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Betreuung',
-                            link: '#/'
-                        },
-                        {
-                            name: 'Fahrradwerkstatt',
                             link: '#/'
                         }
                     ]

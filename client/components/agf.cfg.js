@@ -25,31 +25,22 @@
                 template: '<agf-home></agf-home>'
             })
             .when('/about', {
-                template: '<about></about>'
+                template: '<AGF-about></AGF-about>'
             })
             .when('/projects', {
-                template: '<projects></projects>'
+                template: '<agf-projects></agf-projects>'
             })
             .when('/contact', {
-                template: '<contact></contact>'
+                template: '<agf-contact></agf-contact>'
             })
             .when('/legal', {
                 template: '<agf-legal></agf-legal>'
             })
             .when('/statutes', {
-                template: '<statutes></statutes>'
+                template: '<agf-statutes></agf-statutes>'
             })
-            .when('/classes', {
-                template: '<classes></classes>'
-            })
-            .when('/care', {
-                template: '<care></care>'
-            })
-            .when('/cafe', {
-                template: '<cafe></cafe>'
-            })
-            .when('/garage', {
-                template: '<garage></garage>'
+            .when('/news', {
+                template: '<agf-news></agf-news>'
             })
             .otherwise({
                 redirectTo: '/'

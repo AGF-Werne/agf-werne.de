@@ -10,7 +10,7 @@
     angular
         .module('agf')
         .component('agfMosaic', {
-            templateUrl: 'components/agf-mosaic/agf-mosaic.html',
+            templateUrl: 'components/agf-home/agf-mosaic/agf-mosaic.html',
             controller: controller
         });
 

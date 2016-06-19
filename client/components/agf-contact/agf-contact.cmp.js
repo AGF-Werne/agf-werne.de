@@ -1,5 +1,5 @@
 /**
- * @file projects.cmp.js
+ * @file agf-contact.cmp.js
  * @namespace Components
  */
 
@@ -9,13 +9,13 @@
 
     angular
         .module('agf')
-        .component('projects', {
-            templateUrl: 'components/projects/projects.html',
+        .component('agfContact', {
+            templateUrl: 'components/agf-contact/agf-contact.html',
             controller: controller
         });
 
     /**
-     * @namespace projects
+     * @namespace agfContact
      * @memberof Components
      * @requires __env
      * @returns {Boolean}
