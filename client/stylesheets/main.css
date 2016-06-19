@@ -16,22 +16,6 @@
 .home {
   height: 100%;
   width: 100%;
-  /* .logo {
-        margin-top: 40px;
-        margin-bottom: 70px;
-
-        a {
-            // padding-left: 5px;
-            // padding-right: 5px;
-            padding-bottom: 5px;
-            color: @color-alizarin;
-            border-bottom: 1px solid @color-sunflower;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-    }*/
 }
 .logo {
   margin-top: 20px;
@@ -79,9 +63,63 @@
 .footer .copyright a {
   color: white;
 }
+.news {
+  background-color: #3498db;
+}
+.about {
+  background-color: #e67e22;
+}
+.projects {
+  background-color: #e74c3c;
+}
+.infos {
+  background-color: #1abc9c;
+}
+.contact {
+  background-color: #9b59b6;
+}
 @media screen and (max-width: 500px) {
-  body {
-    background-color: red;
+  .mosaic {
+    height: 320px;
+  }
+  .mosaic .fields {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .mosaic .fields .field {
+    width: 100%;
+  }
+  .mosaic .fields .field .button {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+  }
+  .mosaic .fields .field .button .caption {
+    padding: 3px 10px 4px 10px;
+  }
+  .mosaic .fields .field .button:hover {
+    background-color: rgba(30, 30, 30, 0.2);
+  }
+  .mosaic .fields .left .top {
+    height: 64px;
+  }
+  .mosaic .fields .left .bottom {
+    height: 64px;
+    border-top: 1px solid black;
+  }
+  .mosaic .fields .right .top {
+    height: 64px;
+    border-top: 1px solid black;
+  }
+  .mosaic .fields .right .middle {
+    height: 64px;
+    border-top: 1px solid black;
+  }
+  .mosaic .fields .right .bottom {
+    height: 64px;
+    border-top: 1px solid black;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1000px) {
@@ -90,6 +128,7 @@
     padding: 0px;
     margin-left: -15px;
     margin-right: -15px;
+    height: 300px;
     width: 100%;
   }
   .mosaic .background-img {
@@ -104,7 +143,7 @@
     background-size: 100% 100%;
     background-attachment: local;
     position: relative;
-    height: 314px;
+    height: 300px;
     width: 100%;
   }
   .mosaic .fields {
@@ -118,7 +157,7 @@
   }
   .mosaic .fields .field {
     float: left;
-    height: 314px;
+    height: 300px;
     width: 50%;
   }
   .mosaic .fields .field .button {
@@ -136,38 +175,23 @@
     border-right: 1px solid white;
   }
   .mosaic .fields .left .top {
-    height: 157px;
+    height: 150px;
     border-bottom: 1px solid white;
   }
   .mosaic .fields .left .bottom {
-    height: 157px;
+    height: 150px;
   }
   .mosaic .fields .right .top {
-    height: 117.75px;
+    height: 112.5px;
     border-bottom: 1px solid white;
   }
   .mosaic .fields .right .middle {
-    height: 117.75px;
+    height: 112.5px;
     border-bottom: 1px solid white;
   }
   .mosaic .fields .right .bottom {
     padding-top: 17px;
-    height: 78.5px;
-  }
-  .mosaic .news {
-    background-color: #3498db;
-  }
-  .mosaic .about {
-    background-color: #e67e22;
-  }
-  .mosaic .projects {
-    background-color: #e74c3c;
-  }
-  .mosaic .infos {
-    background-color: #1abc9c;
-  }
-  .mosaic .contact {
-    background-color: #9b59b6;
+    height: 75px;
   }
 }
 @media screen and (min-width: 1001px) {
