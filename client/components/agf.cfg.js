@@ -25,7 +25,10 @@
                 template: '<agf-home></agf-home>'
             })
             .when('/about', {
-                template: '<AGF-about></AGF-about>'
+                template: '<agf-about></agf-about>'
+            })
+            .when('/infos', {
+                template: '<agf-infos></agf-infos>'
             })
             .when('/projects', {
                 template: '<agf-projects></agf-projects>'

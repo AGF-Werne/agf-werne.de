@@ -4,23 +4,33 @@
   </div>
   <div class="fields pos-abs clear-both">
     <div class="field left">
-      <section class="button top" ng-click="$ctrl.onClick('/news')">
-        <span class="caption news">Neuigkeiten</span>
-      </section>
-      <section class="button bottom" ng-click="$ctrl.onClick('/about')">
-        <span class="caption about">&Uuml;ber uns</span>
-      </section>
+      <a href="#/news">
+        <section class="button top">
+          <span class="caption mosaic-news">Neuigkeiten</span>
+        </section>
+      </a>
+      <a href="#/about">
+        <section class="button bottom">
+          <span class="caption mosaic-about">&Uuml;ber uns</span>
+        </section>
+      </a>
     </div>
     <div class="field right">
-      <div class="button top" ng-click="$ctrl.onClick('/projects')">
-        <span class="caption projects">Unsere Arbeit</span>
-      </div>
-      <div class="button middle" ng-click="$ctrl.onClick('/care')">
-        <span class="caption infos">Infos</span>
-      </div>
-      <div class="button bottom" ng-click="$ctrl.onClick('/contact')">
-        <span class="caption contact">Kontakt</span>
-      </div>
+      <a href="#/projects">
+        <div class="button top">
+          <span class="caption mosaic-projects">Unsere Arbeit</span>
+        </div>
+      </a>
+      <a href="#/infos">
+        <div class="button middle">
+          <span class="caption mosaic-infos">Informationen</span>
+        </div>
+      </a>
+      <a href="#/contact">
+        <div class="button bottom">
+          <span class="caption mosaic-contact">Kontakt</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>

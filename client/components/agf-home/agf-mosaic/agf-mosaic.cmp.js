@@ -18,24 +18,11 @@
      * @namespace agfMosaic
      * @memberof Components
      * @requires __env
-     * @requires $location
      * @returns {Boolean}
      */
-    function controller (__env, $location) {
+    function controller (__env) {
         var vm = this;
 
-        init();
-
         return true;
-
-        function init () {
-            vm.onClick = onClick;
-        }
-
-        function onClick (path) {
-            $location.path(path);
-
-            return true;
-        }
     }
 })(angular);
