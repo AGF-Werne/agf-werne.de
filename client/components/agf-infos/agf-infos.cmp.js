@@ -20,9 +20,18 @@
      * @requires ___env
      * @returns {Boolean}
      */
-    function controller (___env) {
+    function controller (__env) {
         var vm = this;
 
-        return true;
+        return init();
+
+        function init () {
+            var mode = __env.mode;
+            var nav = __env[mode].navigation.main;
+
+            vm.nav = nav;
+
+            return true;
+        }
     }
 })(angular);

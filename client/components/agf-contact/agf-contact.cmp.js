@@ -3,7 +3,7 @@
  * @namespace Components
  */
 
-/* global angular */
+/* global angular L */
 (function (angular) {
     'use strict';
 
@@ -20,7 +20,7 @@
      * @requires __env
      * @returns {Boolean}
      */
-    function controller (__env) {
+    function controller (__env, $timeout) {
         var vm = this;
 
         return init();
