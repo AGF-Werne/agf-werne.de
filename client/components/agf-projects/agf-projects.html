@@ -5,21 +5,17 @@
 
     <div class="row">
       <div class="col-xs-9">
-        <div class="page-header">
-          <h1>Derzeitige Projekte</h1>
-        </div>
-
-        <div ng-bind-html="$ctrl.content"></div>
+        <div ng-include="$ctrl.content"></div>
       </div>
 
       <div class="col-xs-3">
         <br><br><br><br><br><br>
 
         <ul>
-          <li><a href="#/projects">Aktuelle Projekte</a></li>
-          <li><a href="#/projects?course">Deutschhkurse</a></li>
-          <li><a href="#/projects?cafe">Frauen-Café</a></li>
-          <li><a href="#/projects?garage">Fahrradwerkstatt</a></li>
+          <li><a href="#/projects?womanclasses">Deutschunterricht für Frauen</a></li>
+          <li><a href="#/projects?workintegration">„Integration in die Arbeitswelt“</a></li>
+          <li><a href="#/projects?womancafe">Frauen-Café</a></li>
+          <li><a href="#/projects?btreff">B-Treff</a></li>
         </ul>
       </div>
     </div>

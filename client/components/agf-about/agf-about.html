@@ -5,18 +5,15 @@
 
     <div class="row">
       <div class="col-xs-9">
-        <div class="page-header">
-          <h1>&Uuml;ber uns</h1>
-        </div>
-
-        <div ng-bind-html="$ctrl.content"></div>
+        <div ng-include="$ctrl.content"></div>
       </div>
 
       <div class="col-xs-3">
         <br><br><br><br><br><br>
 
         <ul>
-          <li><a href="#/about">&Uuml;ber uns</a></li>
+          <li><a href="#/about">Geschichte des Vereins</a></li>
+          <li><a href="#/about?structure">Vereinsstruktur</a></li>
           <li><a href="#/about?statute">Vereinssatzung</a></li>
         </ul>
       </div>
