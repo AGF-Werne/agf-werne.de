@@ -37,8 +37,14 @@
             else if ($location.search().womancafe) {
                 vm.content = 'components/agf-projects/agf-projects-womancafe.html';
             }
-            else {
+            else if ($location.search().womanclasses) {
                 vm.content = 'components/agf-projects/agf-projects-womanclasses.html';
+            }
+            else if ($location.search().garage) {
+                vm.content = 'components/agf-projects/agf-projects-garage.html';
+            }
+            else {
+                vm.content = 'components/agf-projects/agf-projects-index.html';
             }
 
             return true;
