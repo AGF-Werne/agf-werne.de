@@ -18,6 +18,7 @@
      * @namespace agfProjects
      * @memberof Components
      * @requires __env
+     * @requires $location
      * @returns {Boolean}
      */
     function controller (__env, $location) {
