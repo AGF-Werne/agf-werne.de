@@ -88,7 +88,7 @@
   height: 200px;
   width: 100%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .mosaic {
     height: 320px;
   }
@@ -132,7 +132,7 @@
     border-top: 1px solid black;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 1000px) {
+@media screen and (min-width: 541px) and (max-width: 1000px) {
   .mosaic {
     margin: 0px;
     padding: 0px;
@@ -151,8 +151,9 @@
   .mosaic .background-img .image {
     background-image: url('../assets/images/werne_xl.jpg');
     background-size: 100% auto;
-    background-position: 0px -490px;
+    background-position: 0px 0px;
     background-attachment: local;
+    background-repeat: no-repeat;
     position: relative;
     height: 300px;
     width: 100%;
@@ -222,8 +223,9 @@
   .mosaic .background-img .image {
     background-image: url('../assets/images/werne_xl.jpg');
     background-size: 100% auto;
-    background-position: 0px -490px;
+    background-position: 0px 0px;
     background-attachment: local;
+    background-repeat: no-repeat;
     position: relative;
     height: 314px;
     width: 100%;
