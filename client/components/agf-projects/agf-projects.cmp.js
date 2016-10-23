@@ -44,6 +44,9 @@
             else if ($location.search().garage) {
                 vm.content = 'components/agf-projects/agf-projects-garage.html';
             }
+            else if ($location.search().classes) {
+                vm.content = 'components/agf-projects/agf-projects-classes.html';
+            }
             else {
                 vm.content = 'components/agf-projects/agf-projects-index.html';
             }
