@@ -1,0 +1,114 @@
+@import "common.less";
+
+.header {
+    margin-top: 40px;
+
+    .agf-logo {
+        height: 140px;
+
+        a {
+            .image {
+                height: 60px;
+            }
+        }
+    }
+}
+
+.c-facebook { color: @color-facebook }
+.c-about { color: @color-red-passive; }
+.bg-projects { background: @color-blue-passive; }
+.bg-about { background: @color-yellow-passive; }
+.bg-infos { background: @color-red-passive; }
+.bg-contact { background: @color-green-passive; }
+
+@mosaic-height: 300px;
+
+.mosaic-nav {
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+
+    .mosaic-nav-background {
+        height: @mosaic-height;
+        width: 100%;
+        background-image: url("../img/background-werne-xl.jpg");
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .mosaic-nav-fields {
+        height: @mosaic-height;
+        width: 100%;
+        z-index: 1000;
+
+        a {
+            text-decoration: none;
+        }
+
+        aside {
+            width: 50%;
+        }
+
+        .button {
+            padding: 40px 0 0 45px;
+            color: #fff;
+            background-color: rgba(100, 100, 100, 0.1);
+            font-size: 40px;
+            z-index: 1001;
+
+            .caption {
+                z-index: 1002;
+                padding: 0 15px 0 15px
+            }
+        }
+
+        .button.bottom {
+            border-top: 1px solid #fff;
+        }
+
+        .button:hover {
+            background-color: rgba(100, 100, 100, 0.3);
+
+            .bg-projects { background: @color-blue-active; }
+            .bg-about { background: @color-yellow-active; }
+            .bg-infos { background: @color-red-active; }
+            .bg-contact { background: @color-green-active; }
+        }
+
+        .left {
+            height: 100%;
+
+            .button.top {
+                height: 50%;
+            }
+
+            .button.bottom {
+                height: 50%;
+            }
+        }
+
+        .right {
+            height: 100%;
+            border-left: 1px solid #fff;
+
+            .button.top {
+                height: 70%;
+            }
+
+            .button.bottom {
+                padding: 14px 0 0 45px;
+                height: 30%;
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 30px;
+    outline: 1px solid;
+}
+
+.footer {
+    margin-top: 30px;
+    outline: 1px solid;
+}

@@ -1,0 +1,14 @@
+// layout/pagelayout_body
+block body
+  body#backtotop
+    include pagelayout_body_header.pug
+    include pagelayout_body_navigation.pug
+
+    div.container
+      div.content
+        block content
+          p Pagelayout Body Content
+
+    include pagelayout_body_footer.pug
+    include pagelayout_body_scripts.pug
+// / layout/pagelayout_body
