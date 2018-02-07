@@ -12,27 +12,29 @@ gulp.task("clean", function() {
 gulp.task("copy:assets", function() {
     return gulp
         .src([
-            "./src/assets/**/*",
-            "!./src/assets/less",
-            "!./src/assets/less/**"
+            "./src/**/*",
+            "!./src/less",
+            "!./src/less/**",
+            "!./src/views",
+            "!./src/views/**"
         ])
-        .pipe(gulp.dest("./build/assets/"));
+        .pipe(gulp.dest("./build/"));
 });
 
 gulp.task("less", function() {
     return gulp
-        .src("./src/assets/less/*.less")
+        .src("./src/less/*.less")
         .pipe(
             less({
                 paths: [path.join(__dirname, "less", "includes")]
             })
         )
-        .pipe(gulp.dest("./build/assets/css/"));
+        .pipe(gulp.dest("./build/css/"));
 });
 
 gulp.task("pug", ["clean"], function() {
     return gulp
-        .src(["src/*.pug", "!src/partials/"])
+        .src(["src/views/*.pug"])
         .pipe(pug())
         .pipe(gulp.dest("./build/"));
 });
