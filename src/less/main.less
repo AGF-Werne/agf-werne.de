@@ -13,6 +13,21 @@
             }
         }
     }
+
+    .agf-headline {
+        @media (max-width: @breaking-point-lg) {
+            h1 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: @breaking-point-md) {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+
 }
 
 .c-facebook { color: @color-facebook }
@@ -53,7 +68,7 @@
         .button {
             padding: 40px 0 0 45px;
             color: #fff;
-            background-color: rgba(100, 100, 100, 0.1);
+            background-color: rgba(255, 255, 255, 0.4);
             font-size: 40px;
             z-index: 1001;
 
@@ -68,7 +83,7 @@
         }
 
         .button:hover {
-            background-color: rgba(100, 100, 100, 0.3);
+            background-color: rgba(255, 255, 255, 0.3);
 
             .bg-projects { background: @color-blue-active; }
             .bg-about { background: @color-yellow-active; }
@@ -97,7 +112,7 @@
             }
 
             .button.bottom {
-                padding: 14px 0 0 45px;
+                padding: 16px 0 0 45px;
                 height: 30%;
             }
         }
