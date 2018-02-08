@@ -23,7 +23,7 @@ gulp.task("copy:assets", function() {
 
 gulp.task("less", function() {
     return gulp
-        .src("./src/less/*.less")
+        .src(["./src/less/*.less", "!./src/less/common.less"])
         .pipe(
             less({
                 paths: [path.join(__dirname, "less", "includes")]
