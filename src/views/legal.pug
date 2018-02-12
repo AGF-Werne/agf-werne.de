@@ -5,7 +5,9 @@ block title
 
 block content
   // legal
-  p Impressum
-  //- abbr(title="Barrierefreie Informationstechnik-Verordnung") BITV
-  a(href="index.html") zur&uuml;ck zur Startseite
+  nav(aria-label="breadcrumb")
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href="index.html") Startseite
+      li.breadcrumb-item.active(aria-current="page") Impressum
   // / legal
