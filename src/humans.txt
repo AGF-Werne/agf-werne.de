@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: 
+Site: 
+Location: 
+
+/* THANKS */
+Name: 
+
+/* SITE */
+Last update: 
+Standards: HTML5, CSS3
+Software: Git, Pug, Gulp, Sublime
+
+/* SOURCE */
+Source: 
+License: 
