@@ -1,41 +1,38 @@
 @import "common.less";
 
-.header {
-    margin-top: 40px;
-
-    .agf-logo {
-        margin-top: 10px;
-        height: 140px;
-
-        a {
-            .image {
-                height: 60px;
-            }
-        }
-    }
-
-    .agf-headline {
-        @media (max-width: @breaking-point-lg) {
-            h1 {
-                font-size: 34px;
-            }
-        }
-
-        @media (max-width: @breaking-point-md) {
-            h1 {
-                font-size: 28px;
-            }
-        }
-    }
-
-}
-
 .c-facebook { color: @color-facebook }
 .c-about { color: @color-red-passive; }
+
 .bg-projects { background: @color-blue-passive; }
 .bg-about { background: @color-yellow-passive; }
 .bg-infos { background: @color-red-passive; }
 .bg-contact { background: @color-green-passive; }
+.bg-footer { background: @color-grey-passive; }
+
+.header {
+    .agf-logo {
+
+        a {
+            .image {
+                // height: 60px;
+            }
+        }
+    }
+
+    // .agf-headline {
+    //     @media (max-width: @breaking-point-lg) {
+    //         h1 {
+    //             font-size: 34px;
+    //         }
+    //     }
+
+    //     @media (max-width: @breaking-point-md) {
+    //         h1 {
+    //             font-size: 28px;
+    //         }
+    //     }
+    // }
+}
 
 @mosaic-height: 300px;
 
@@ -124,34 +121,15 @@
 }
 
 .footer {
-    margin-top: 30px;
-    height: 100px;
-    background-color: #4b6584;
-
-    .left {
-        padding: 10px 0 0 0;
-
-        .copyright {
-            color: #fff;
-
-            a {
-                color: #fed330;
-            }
+    .copyright {
+        a {
+            color: @color-yellow-passive;
         }
+    }
 
-        .links {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-
-            li {
-                display: inline;
-                margin-right: 10px;
-
-                a {
-                    color: #fff;
-                }
-            }
-        }
+    .links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 }
