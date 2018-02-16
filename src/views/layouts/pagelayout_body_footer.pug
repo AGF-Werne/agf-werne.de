@@ -1,20 +1,20 @@
 // layout/pagelayout_body_footer
 block footer
-  footer.footer
-    div.container-fluid
-      div.row
-        div.col
-          div.left
-            div.copyright.float-left &copy;&nbsp;<span class="year">2018</span>&nbsp;<a href="http://www.agf-werne.de/">AGF&nbsp;Werne&nbsp;e.&nbsp;V.</a>
-            ul.links.float-left.ml-4
-              li
-                a(href="./contact.html#content") Kontakt
-              li
-                a(href="./legal.html#content") Impressum
-        div.col-2
-          div.right.float-right
-            a.backtotop.fa-3x(href="#backtotop", alt="Scroll back to top")
-              span.fa-layers.fa-fw
-                i.fas.fa-circle.c-about
-                i.fa-inverse.fa.fa-chevron-up(data-fa-transform="shrink-6")
+  footer.footer.mt-5.bg-footer
+    div.d-sm-flex.justify-content-between
+      div.p-2
+        div.copyright.d-flex.align-items-center.h-100.text-white
+          div.p-2 &copy;&nbsp;<span class="year">2018</span>&nbsp;<a href="http://www.agf-werne.de/">AGF</a>
+      div.p-2
+        ul.links.d-flex.align-items-center.h-100
+          li.p-2.mr-3
+            a.text-white(href="./contact.html#content") Kontakt
+          li.p-2
+            a.text-white(href="./legal.html#content") Impressum
+      div.p-2
+        div.backtotop
+          a.fa-3x(href="#backtotop", alt="Scroll back to top")
+            span.fa-layers.fa-fw
+              i.fas.fa-circle.c-about
+              i.fa-inverse.fa.fa-chevron-up(data-fa-transform="shrink-6")
 // / layout/pagelayout_body_footer
