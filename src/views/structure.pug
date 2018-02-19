@@ -1,0 +1,95 @@
+extends layouts/two_columns.pug
+
+block title
+  title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - &Uuml;ber uns
+
+block content
+  // structure
+  nav(aria-label="breadcrumb")
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href="index.html") Startseite
+      li.breadcrumb-item
+        a(href="about.html") &Uuml;ber uns
+      li.breadcrumb-item.active(aria-current="page") Vereinsstruktur
+  div.jumbotron.jumbotron-fluid
+    div.container.pl-5.pr-5
+      h1.display-4 Vereinsstruktur
+      dl.dl-horizontal
+        dt Erweiterter Vorstand:
+          dd
+            div geschäftsführender Vorstand
+            div 1-2 Personen aus den einzelnen Arbeitskreisen
+      dt Aufgaben:
+        dd
+          div Koordination der Bereiche
+          div Überblick über die Finanzen/Geldspenden
+          div Kontakt mit der Stadt &amp; weiteren Organisationen
+          div Planung von Veranstaltungen
+          div Weiterentwicklung der AGF
+  div.container
+    div.row
+      div.col
+        div#structure
+          ol
+            li
+              div
+                b Deutsch als Fremdsprache
+              ul
+                li
+                  b Leitung: Annette Maru / Ingrid Spiekermann
+                li Koordination und Weiterentwicklung der Sprachkurse
+                li Austausch der Lehrenden
+                li Alphabetisierung / Erarbeitung von Unterrichtsmaterial
+            li
+              div
+                b Patenschaften  für die Betreuung von Familien und Schülern
+              ul
+                li
+                  b Leitung: Heidrun Steiger
+                li Aufbau eines Patenschaftsmodells mit Ansprechpartnern für die einzelnen Unterkünfte
+                li Koordinierung der Begleitung von Flüchtlingen
+            li
+              div
+                b Vernetzung der AGF
+              ul
+                li
+                  b Leitung: Anne Klose / Danilo Klose
+                li Intensivierung der Öffentlichkeitsarbeit über Flyer, Presse, soziale Medien etc.
+                li Einsatz von Facebook
+                li Erstellung einer Homepage
+            li
+              div
+                b Fahrradwerkstatt/Fernsehinstallation/Kleiderkammer/Kleinmöbel
+              ul
+                li
+                  b Leitung: Jupp Dahmen / Stefanie Feldmeier
+                li Umgang mit Kleidungs- und Sachspenden
+                li Fahrradwerkstatt
+                li Fernsehinstallationen/Lagerung und Ausgabe von Zubehör
+            li
+              div
+                b Integration in die Arbeitswelt
+              ul
+                li
+                  b Leitung: Monika Meyer
+                li Versuch der Vermittlung von Hospitation, Praktikum, Ausbildung und Arbeit
+                li Kontakte zu Werner Unternehmen
+                li Kontakte zu Integration Point, Jobcenter usw.
+            li
+              div
+                b Wohnungsvermittlung
+              ul
+                li
+                  b Leitung: Kerstin Ludwig
+                li Kontakte zu Wohnungsbaufirmen
+                li Ablaufbeschreibung bei Anmietung einer Wohnung
+      div.col-4
+        ul
+          li
+            a(href="about.html#content") Vereinsgeschichte
+          li
+            a(href="statutes.html#content") Vereinssatzung
+          li
+            a(href="http://agf-werne.de/assets/files/aufnahmeantrag-agfwerne.20170402.pdf") Mitgliedschaftsantrag
+  // / structure
