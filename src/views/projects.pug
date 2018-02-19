@@ -1,13 +1,56 @@
-extends layouts/pagelayout.pug
+extends layouts/two_columns.pug
 
 block title
   title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - Projekte
 
 block content
   // projects
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item.active(aria-current="page") Unsere Arbeit
+  div.jumbotron.jumbotron-fluid
+    div.container.pl-5.pr-5
+      h1.display-4 Unsere Projekte
+      p.lead Die Arbeitsgemeinschaft unterstützt die Flüchtlinge bei der Integration durch viele verschiedene Projekte. Dazu gehören neben dem regulären Deutschunterricht und der Begleitung der Flüchtlinge zu Behörden, unter anderem folgende:
+      p.lead Der Deutschunterricht für Frauen, die Fahrradwerkstatt, das Frauen-Café sowie die Integration in die Arbeitswelt.
+  div.container
+    div.row
+      div.col
+        div#teaching
+          h2 Deutschunterricht
+          p Die Erteilung von Deutschunterricht, verbunden mit der Finanzierung der Unterrichtsmittel für die Teilnehmer, war von Anfang an, bereits lange vor der Gründung des Vereins, eine der Kernzielsetzungen der AGF Werne e.V.
+          p Schon seit 2014 unterrichteten in Werne ehrenamtliche Lehrkräfte Deutsch in den Flüchtlingsunterkünften, meist unter räumlich beengten und ungünstigen äußeren Bedingungen.
+          p Im April 2015 konnten dann endlich in Zusammenarbeit mit der VHS Werne die ersten vier ehrenamtlichen Deutschkurse auf unterschiedlichen Niveaus mit jeweils zwei wöchentlichen Kursterminen in der Marga-Spiegel-Schule starten, es standen zum ersten Mal richtige Klassenräume mit geeigneter Ausstattung zur Verfügung. Ab Herbst 2015 wuchsen im Zuge des Andrangs einer großen Zahl von Flüchtlingen die Teilnehmerzahlen sehr stark an, und bis zum Sommer 2016 gab es neben den ursprünglichen in 2015 begonnenen Kursen zeitweise sechs weitere Kurse im Alfabetisierungs-, Anfänger- und Fortgeschrittenenbereich mit jeweils 4 wöchentlichen Terminen und insgesamt ca. 150 TeilnehmerInnen, die alle von einem Kollegium aus ca. 20-25 ehrenamtlichen KursleiterInnen abgedeckt wurden. Neben der Marga-Spiegel-Schule stellten in den Schulferien auch das Juwel und das Freiherr-vom-Stein-Berufskolleg Räumlichkeiten zur Verfügung, so dass nahezu die ganze Zeit über kontinuierlich unterrichtet werden konnte.
+          p Seit August 2016 findet der Deutschunterricht in der Barbaraschule statt. Zur Zeit laufen neben dem offiziellen Integrationskurs der VHS Werne ein 100-Stunden-Kurs mit Förderung durch das Land NRW sowie vier ehrenamtliche Kurse, ein Alfabetisierungskurs, ein reiner Anfängerkurs, ein Kurs für fortgeschrittene Anfänger und ein Fortgeschrittenenkurs auf Niveau A2. Diese Kurse finden jeweils von Montag bis Donnerstag in der Zeit von 16:30 – 18:00 Uhr statt, neue TeilnehmerInnen können jederzeit hinzukommen und eingegliedert werden. Dank der zur Verfügung stehenden Räume und der Flexibilität des Kollegiums könnten durchaus weitere Kurse gebildet werden, auch neue ehrenamtliche Lehrkräfte sind jederzeit willkommen.
+        div#teachingwomen
+          h2 Deutschunterricht für Frauen
+          p Der Deutschunterricht für Frauen findet seit Februar 2015 zwei Mal wöchentlich vormittags statt. Seit Juli 2016 sind im B-Treff die Räume so ausgestattet worden, dass seitdem dort der Unterricht stattfinden kann.
+          p Wir bieten 3 Kurse an: einen Alfabetisierungskurs, einen für Sprachanfängerinnen und den dritten für Anfängerinnen mit geringen Vorkenntnissen.
+          p Das Interesse der Frauen an der Sprache ist ebenso groß wie das der Männer, weil aber die Betreuung der Kinder in der Regel nur in den Händen der Frauen liegt, bieten wir diese Kurse nicht nur zu anderen Zeiten an sondern auch mit der Möglichkeit, kleine Kinder im Kinderwagen mitzubringen. Seit Juli 2016 können zur gleichen Zeit die etwas größeren Kinder (im Alter von 1 -6) in der „Löwenburg“, dem Kindergarten für Flüchtlingskinder, betreut werden, so dass die Mütter sich ganz auf den Unterricht konzentrieren können.
+        div#garage
+          h2 Fahrradwerkstatt
+          p Die Fahrradwerkstatt besteht seit November 2014 also 2 Jahre.
+          p In dieser Zeit wurden über 400 Damen-, Herren- und Kinder-Fahrräder gespendet. Diese wurden durch das Werkstatt-Team verkehrstüchtig gemacht und an die Asylbewerber weitergeben. Zu dem Werkstatt-Team gehören auch Asylbewerber die mithelfen die Fahrräder zu reparieren.
+          p Die Werkstatt befindet sich an der Stockumer Straße in den von Bernhard Schlierkamp seit 1,5 Jahren unentgeltlich zur Verfügung gestellten Großgaragen, gegenüber der abgebrochenen Weihbachschule.
+          p Hierher können jeden Dienstag von 17 bis 19 Uhr die Asylbewerber mit ihren defekten Fahrrädern kommen und sie sich selber reparieren.
+          p Gleichzeitig ist dort die Meldestelle für Asylbewerber die ein Fahrrad haben möchten. Von jedem Bewerber wird ein Foto gemacht. Wer ein Fahrrad erhält bekommt einen Ausweis und an dem Fahrrad wird ein Schild angebracht auf dem der Name und eine Fahrradnummer steht. Einige haben versucht sich mehrmals registrieren zu lassen sind aber entdeckt und abgewiesen worden.
+          p Bedanken möchte ich mich auch beim Pertheswerk am Bahnhof. Hier wird uns bei schwierigen Reparaturen, wofür wir kein Werkzeug oder Fachwissen haben geholfen.
+          p Wir sind alles keine Spezialisten für Fahrräder sondern Laien, die enfach angefangen haben zu helfen. Wer also noch Fahrräder oder Ersatzteile im Keller oder Garage hat kann sich bei der AGF oder bei mir melden.
+          p Telefonisch unter 02389/45383 oder per E-Mail unter franz-josef.dahmen@web.de.
+        div#cafe
+          h2 Frauen-Café
+          p Das Kaffeetrinken für Flüchtlingsfrauen hat die AGF in Zusammenarbeit mit dem WSC im Februar 2015 ins Leben gerufen. Monatlich bieten wir den Frauen damit die Möglichkeit, sich untereinander und mit ihren deutschen Betreuerinnen in zwangloser Atmosphäre zu unterhalten, neue Bekanntschaften zu machen und dabei auch die erworbenen Deutschkenntnisse zu testen. Seit Juli 2016 findet das Treffen im B-Treff in der Burgstraße statt.
+        div#integration
+          h2 „Integration in die Arbeitswelt“
+          p Der Arbeitskreis „Integration in die Arbeitswelt“ hat sich zum Ziel gesetzt, möglichst vielen Flüchtlingen den deutschen Arbeitsalltag näher zu bringen.
+          p Wir versuchen Hospitations- und Praktikumsplätze zu finden, so dass interessierte Asylbewerber mit Grundkenntnissen in der deutschen Sprache einen Einblick in die Strukturen und Abläufe in Firmen, Läden oder Büros bekommen. Dabei arbeiten wir mit dem Integration-Point und der Ausländerbehörde zusammen.
+      div.col-4
+        ul
+          li
+            a(href="projects.html#teaching") Deutschunterricht
+          li
+            a(href="projects.html#teachingwomen") Deutschunterricht für Frauen
+          li
+            a(href="projects.html#garage") Fahrradwerkstatt
+          li
+            a(href="projects.html#cafe") Frauen-Café
+          li
+            a(href="projects.html#integration") „Integration in die Arbeitswelt“
   // / projects

@@ -1,0 +1,16 @@
+doctype html
+html(lang="de")
+  // layout/two_columns
+  include pagelayout_head.pug
+  
+  block body
+    body#backtotop
+      include pagelayout_body_header.pug
+
+      div.content.container.mt-1#content
+        block content
+          p Pagelayout Body Content
+
+      include pagelayout_body_footer.pug
+      include pagelayout_body_scripts.pug
+  // / layout/two_columns
