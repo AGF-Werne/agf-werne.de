@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "Repository for the website of [Arbeitsgemeinschaft Flüchtlinge Werne e.V.](http://www.agf-werne.de)",
   "main": "./src/index.html",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AGF-Werne/agf-werne.de.git"
