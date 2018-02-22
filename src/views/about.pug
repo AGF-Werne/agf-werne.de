@@ -1,19 +1,18 @@
 extends layouts/two_columns.pug
 
 block title
-  title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - &Uuml;ber uns
+  title Der Verein - Vereinsgeschichte
 
 block content
   // about
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item
-        a(href="about.html") &Uuml;ber uns
-      li.breadcrumb-item.active(aria-current="page") Vereinsgeschichte
   div.jumbotron.jumbotron-fluid
     div.container.pl-5.pr-5
+      nav(aria-label="breadcrumb")
+        ol.breadcrumb.p-0
+          li.breadcrumb-item
+            a(href="index.html") Startseite
+          li.breadcrumb-item
+            a(href="about.html") Der Verein
       h1.display-4 Die Geschichte des Vereins
       p.lead Alles begann – schon verh&auml;ltnism&auml;ßig fr&uuml;h – Anfang 2012, als Dr. Hermann Steiger, Mitglied des Vereins Agenda 21, &uuml;ber die Presse auf die Tatsache aufmerksam gemacht wurde, dass die Fl&uuml;chtlinge in menschenunw&uuml;rdigen, maroden Containern untergebracht wurden. Ehrenamtliche T&auml;tigkeiten wurden im Verein »Agenda 21« koordiniert und bei Gespr&auml;chen wurde schnell klar, dass auch die Fl&uuml;chtlinge ein Thema waren, mit dem man sich befassen wollte. Man wollte denen helfen, die alles verloren hatten.
   div.container
@@ -35,11 +34,5 @@ block content
           p Und nat&uuml;rlich gibt es auch in Werne diejenigen, die lieber auf die h&ouml;ren, die Fl&uuml;chtlinge hinausdr&auml;ngen wollen, als auf die Stimme der Menschlichkeit und Vernunft. Dass diese Stimmen leise sind, ist nicht zuletzt dem hohen pers&ouml;nlichen Einsatz jedes einzelnen der 130 Mitglieder der Fl&uuml;chtlingshilfe zu verdanken und den vielen Unbekannten, die »einfach so« helfen, ohne dass sie einen Rahmen daf&uuml;r wollen oder ben&ouml;tigen. Sie stellen die Br&uuml;cke zur Verst&auml;ndigung dar. Ohne die lebendige Vereinskultur, die sich bereits jetzt etabliert hat, w&auml;re die Integrationsarbeit in Werne nicht in dieser Form leistbar.
           i Kerstin Ludwig
       div.col-4
-        ul
-          li
-            a(href="structure.html#content") Vereinsstruktur
-          li
-            a(href="statutes.html#content") Vereinssatzung
-          li
-            a(href="http://agf-werne.de/assets/files/aufnahmeantrag-agfwerne.20170402.pdf") Mitgliedschaftsantrag
+        include partials/about/navigation.pug
   // / about
