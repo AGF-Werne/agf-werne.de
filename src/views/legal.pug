@@ -1,13 +1,30 @@
-extends layouts/pagelayout.pug
+extends layouts/two_columns.pug
 
 block title
   title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - Impressum
 
 block content
   // legal
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item.active(aria-current="page") Impressum
+  div.text-center
+    h1 Impressum
+    address.mt-5
+    |  <strong>Arbeitsgemeinschaft Flüchtlinge Werne e.V.</strong><br>
+    |  Burgstraße 22<br>
+    |  59368 Werne
+    address
+    |  Amtsgericht Dortmund<br>
+    |  Vereinsregister: 7096
+    address
+    |  <abbr title="Phone">Tel:</abbr> <a href="tel:+4923899245582">(+2389) 9245582</a><br>
+    |  <abbr title="Email">E-Mail:</abbr> <a href="mailto:agfwerne@gmx.de">agfwerne@gmx.de</a>
+    address.mt-5
+    |  <strong>Geschäftsführender Vorstand</strong><br>
+    |  Dr. Hermann Steiger<br>
+    |  Mohammed Amer<br>
+    |  Ursula Rinnen
+    address.mt-5
+    |  <strong>Spendenkonto</strong><br>
+    |  Sparkasse an der Lippe<br>
+    |  BIC: WELADED1LUN<br>
+    |  IBAN: DE 75 4415 2370 0000 7424 60
   // / legal
