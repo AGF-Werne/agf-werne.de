@@ -1,20 +1,19 @@
 extends layouts/two_columns.pug
 
 block title
-  title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - B-Treff
+  title Kontakt - B-Treff
 
 block content
   // contact
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item.active(aria-current="page") Kontakt
-  div.jumbotron.jumbotron-fluid.jumbotron-with-bg
-    div.container.p-5
+  div.jumbotron.jumbotron-fluid.jumbotron-with-bg(style='background-image: url("./img/moebelhaus-reuter.jpg");')
+    div.container.p-5.p-5
+      nav(aria-label="breadcrumb")
+        ol.breadcrumb.p-0
+          li.breadcrumb-item
+            a(href="index.html") Startseite
       div.row
         div.col
-          div.pt-5.pb-5
+          div.pb-5
             div <strong>Arbeitsgemeinschaft Fl&uuml;chtlinge Werne e.V.</strong>
             div Burgstraße 22
             div 59368 Werne
