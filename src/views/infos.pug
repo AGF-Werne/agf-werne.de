@@ -1,18 +1,18 @@
 extends layouts/two_columns.pug
 
 block title
-  title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - Infos
+  title Informationen
 
 block content
   // infos
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item.active(aria-current="page") Infos
-  div.jumbotron.jumbotron-fluid
-    div.container.pl-5.pr-5
-      h1.display-4 Informationen
+  div.jumbotron.jumbotron-fluid.jumbotron-with-bg(style='background-image: url("./img/kinder.jpg");')
+    div.container.p-5.p-5
+      nav(aria-label="breadcrumb")
+        ol.breadcrumb.p-0
+          li.breadcrumb-item
+            a(href="index.html") Startseite
+      h1.display-4 Informationen &amp; Arbeitshilfen
+      p Hier finden Sie eine Sammlung an Informationen und Arbeitshilfen
   div
     h2 AGF-Informationsblatt für Flüchtlinge
     p Den Flyer der AGF finden Sie hier auf <a href="http://agf-werne.de/assets/files/agf-werne-flyer.de.20170402.pdf" target="_blank">deutsch</a>, <a href="http://agf-werne.de/assets/files/agf-werne-flyer.en.20170402.pdf" target="_blank">englisch</a> und <a href="http://agf-werne.de/assets/files/agf-werne-flyer-ar.pdf" target="_blank">arabisch</a>.
@@ -24,11 +24,13 @@ block content
     p Wohnsitzregelung nach § 12a AufenthG auch für anerkannte Flüchtlinge: <a href="http://agf-werne.de/assets/files/arbeitshilfe_wohnsitzregelung-28-10-2016.pdf" target="_blank">Praxistipps und Hintergründe</a>
   div.mt-5
     h2 Die GGUA Flüchtlingshilfe
+    p Hier finden Sie eine Zusammenstellung aktualisierter Arbeitshilfen und tabellarischer Übersichten zu den Zugängen und Leistungsansprüchen für Geduldete und Gestattete:
+    ul
+      li <a href="http://www.einwanderer.net/fileadmin/downloads/tabellen_und_uebersichten/Zugang_zu_Arbeit_mit_Duldung_November_2014.pdf">Arbeitshilfe: Zugang zur Beschäftigung mit Duldung und Aufenthaltsgestattung (August 2016) (mit Übersicht der Regionen ohne und mit Vorrangprüfung - Dank an Timmo Scherenberg und Georg Classen für die Zusammenstellung)</a>
+      li Arbeitshilfe: Erfordernis einer Arbeitserlaubnis und einer Zustimmung durch die BA bei Praktika für Personen mit Aufenthaltsgestattung und Duldung (August 2016)
     p wurde 1979 unter dem Namen Gemeinnützige Gesellschaft zur Unterstützung Asylsuchender e.V. gegründet. Sie ist ein eingetragener Verein, der soziale und aufenthaltsrechtliche Beratung für Flüchtlinge anbietet. Daneben bestehen weitere Projekte zur Verbesserung der Lebensbedingungen und der Inklusion von Flüchtlingen und anderen Migrant*innen. Seit einigen Jahren ist die GGUA zudem anerkannter Träger der Jugendhilfe.</p>
     p
-      a(href="#/infos?ggua") mehr
-    p
-      a(href="http://www.ggua.de") Link
+      a(href="http://www.ggua.de", target="_blank") www.ggua.de
   div.mt-5
     h2 Hand in Hand gegen Rassismus für Menschenrechte und Vielfalt
     p
@@ -43,5 +45,5 @@ block content
         li Haupt- und ehrenamtliche Helfer_innen in ihrer wertvollen Arbeit besser zu unterstützen.
         li Für Teilhabe und Integration zu sorgen. Alle Menschen haben das Recht auf ein menschenwürdiges Leben, auf bezahlbaren Wohnraum und auf Zugang zu Bildung und Arbeit.
     p
-      a(href="http://hand-in-hand-gegen-rassismus.de") Link
+      a(href="http://hand-in-hand-gegen-rassismus.de", target="_blank") www.hand-in-hand-gegen-rassismus.de
   // / infos
