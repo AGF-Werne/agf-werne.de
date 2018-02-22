@@ -1,32 +1,35 @@
 extends layouts/two_columns.pug
 
 block title
-  title AGF&nbsp;Werne&nbsp;e.&nbsp;V. - &Uuml;ber uns
+  title Der Verein - Vereinsstruktur
 
 block content
   // structure
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item
-        a(href="about.html") &Uuml;ber uns
-      li.breadcrumb-item.active(aria-current="page") Vereinsstruktur
   div.jumbotron.jumbotron-fluid
     div.container.pl-5.pr-5
-      h1.display-4 Vereinsstruktur
-      dl.dl-horizontal
-        dt Erweiterter Vorstand:
-          dd
-            div gesch&auml;ftsf&uuml;hrender Vorstand
-            div 1-2 Personen aus den einzelnen Arbeitskreisen
-      dt Aufgaben:
-        dd
-          div Koordination der Bereiche
-          div &Uuml;berblick &uuml;ber die Finanzen/Geldspenden
-          div Kontakt mit der Stadt &amp; weiteren Organisationen
-          div Planung von Veranstaltungen
-          div Weiterentwicklung der AGF
+      nav(aria-label="breadcrumb")
+        ol.breadcrumb.p-0
+          li.breadcrumb-item
+            a(href="index.html") Startseite
+          li.breadcrumb-item
+            a(href="about.html") Der Verein
+      div.row
+        div.col
+          h1.display-4 Vereinsstruktur
+        div.col.pt-4
+          dl.dl-horizontal.lead
+            dt Erweiterter Vorstand:
+              dd
+                div gesch&auml;ftsf&uuml;hrender Vorstand
+                div 1-2 Personen aus den einzelnen Arbeitskreisen
+          dl.lead
+            dt Aufgaben:
+              dd
+                div Koordination der Bereiche
+                div &Uuml;berblick &uuml;ber die Finanzen/Geldspenden
+                div Kontakt mit der Stadt &amp; weiteren Organisationen
+                div Planung von Veranstaltungen
+                div Weiterentwicklung der AGF
   div.container
     div.row
       div.col
@@ -85,11 +88,5 @@ block content
                 li Kontakte zu Wohnungsbaufirmen
                 li Ablaufbeschreibung bei Anmietung einer Wohnung
       div.col-4
-        ul
-          li
-            a(href="about.html#content") Vereinsgeschichte
-          li
-            a(href="statutes.html#content") Vereinssatzung
-          li
-            a(href="http://agf-werne.de/assets/files/aufnahmeantrag-agfwerne.20170402.pdf") Mitgliedschaftsantrag
+        include partials/about/navigation.pug
   // / structure

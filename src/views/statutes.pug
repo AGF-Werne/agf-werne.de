@@ -5,15 +5,14 @@ block title
 
 block content
   // structure
-  nav(aria-label="breadcrumb")
-    ol.breadcrumb
-      li.breadcrumb-item
-        a(href="index.html") Startseite
-      li.breadcrumb-item
-        a(href="about.html") &Uuml;ber uns
-      li.breadcrumb-item.active(aria-current="page") Vereinssatzung
   div.jumbotron.jumbotron-fluid
     div.container.pl-5.pr-5
+      nav(aria-label="breadcrumb")
+        ol.breadcrumb.p-0
+          li.breadcrumb-item
+            a(href="index.html") Startseite
+          li.breadcrumb-item
+            a(href="about.html") Der Verein
       h1.display-4 Vereinssatzung
       p.lead Die folgende Satzung wurde von der Gr&uuml;ndungsversammlung am 27.01.2016 beschlossen.
   div.container
@@ -139,11 +138,5 @@ block content
           p Beschl&uuml;sse hier&uuml;ber d&uuml;rfen erst nach Einwilligung des Finanzamtes ausgef&uuml;hrt werden.
           i Werne, den 27. Januar 2016
       div.col-4
-        ul
-          li
-            a(href="about.html#content") Vereinsgeschichte
-          li
-            a(href="structure.html#content") Vereinstruktur
-          li
-            a(href="http://agf-werne.de/assets/files/aufnahmeantrag-agfwerne.20170402.pdf") Mitgliedschaftsantrag
+        include partials/about/navigation.pug
   // / structure
