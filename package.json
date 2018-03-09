@@ -24,6 +24,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-less": "^3.4.0",
     "gulp-pug": "^3.3.0",
-    "gulp-watch": "^5.0.0"
+    "gulp-watch": "^5.0.0",
+    "replacestream": "^4.0.3"
   }
 }
