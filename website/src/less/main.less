@@ -106,16 +106,45 @@
 }
 
 .footer {
+    position: relative;
+
     .copyright {
+        padding-top: 25px;
+
         a {
             color: @color-yellow-passive;
         }
     }
 
-    .links {
+    ul {
         margin: 0;
-        padding: 0;
+        padding: 15px 0 0 10px;
         list-style: none;
+
+        li {
+            height: 40px;
+
+            a {
+                color: white;
+                text-decoration: underline dotted;
+            }
+        }
+    }
+
+    ul.footer-donations {
+        li {
+            span {
+                margin: 10px;
+                width: 40px;
+            }
+        }
+    }
+
+    ul.footer-contact-list {
+        svg {
+            margin-right: 20px;
+            width: 20px;
+        }
     }
 }
 

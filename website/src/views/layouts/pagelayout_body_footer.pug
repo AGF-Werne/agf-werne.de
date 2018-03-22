@@ -1,20 +1,43 @@
 // layout/pagelayout_body_footer
 block footer
-  footer.footer.mt-5.bg-footer
-    div.container.d-sm-flex.justify-content-between
-      div.p-2
-        div.copyright.d-flex.align-items-center.h-100.text-white
-          div.p-2 &copy;&nbsp;<span class="year">2018</span>&nbsp;<a href="http://www.agf-werne.de/">AGF</a>
-      div.p-2
-        ul.links.d-flex.align-items-center.h-100
-          li.p-2.mr-3
-            a.text-white(href="./contact.html") Kontakt
-          li.p-2
-            a.text-white(href="./legal.html") Impressum
-      div.p-2
-        div.backtotop(data-toggle="tooltip", data-placement="left", title="Zum Seitenanfang")
-          a.fa-3x(href="#backtotop", alt="Scroll back to top")
-            span.fa-layers.fa-fw
-              i.fas.fa-circle.c-about
-              i.fa-inverse.fa.fa-chevron-up(data-fa-transform="shrink-6")
+  - var location_url = "https://www.google.de/maps/place/Burgstra%C3%9Fe+22,+59368+Werne/@51.6637128,7.6302543,17z/data=!3m1!4b1!4m5!3m4!1s0x47b90c3c8df7e607:0xfe95b6c922aedf16!8m2!3d51.6637128!4d7.632443"
+  footer.footer.bg-footer
+    div.container.pt-5.pb-5
+      div.row.text-white
+        div.col
+          h3 Spendenkonto
+          ul.footer-donations
+            li 
+              b Sparkasse an der Lippe
+            li <b>IBAN:</b> DE 75 4415 2370 0000 7424 60
+            li <b>BIC:</b> WELADED1LUN
+        div.col
+          h3 Kontakt
+          ul.footer-contact-list
+            li
+              i.fas.fa-phone
+              a(href="tel:+4923899245582") +49 (0)2389 9245582
+            li
+              i.fas.fa-envelope
+              a(href="mailto:agfwerne@gmx.de") agfwerne@gmx.de
+            li
+              i.fas.fa-map-marker
+              a(href!=calendar) Burgstraße 22, 59368 Werne
+        div.col
+          h3 Öffnungszeiten
+          ul.opening
+            li Montag bis Donnerstag
+            li 14.00 – 16.00 Uhr
+      div.row
+        div.col
+          div.d-flex.justify-content-between.mt-3
+            div.p-2
+            div.p-2
+              div.copyright.text-white &copy;&nbsp;<i class="year">2018</i>&nbsp;<a href="http://www.agf-werne.de/">Arbeitsgemeinschaft Fl&uuml;chtlinge Werne e. V.</a>
+            div.p-2
+              div.backtotop(data-toggle="tooltip", data-placement="left", title="Zum Seitenanfang")
+                a.fa-3x(href="#backtotop", alt="Scroll back to top")
+                  span.fa-layers.fa-fw
+                    i.fas.fa-circle.c-about
+                    i.fa-inverse.fa.fa-chevron-up(data-fa-transform="shrink-6")
 // / layout/pagelayout_body_footer
