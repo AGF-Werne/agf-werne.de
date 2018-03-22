@@ -7,6 +7,7 @@
 .bg-about { background: @color-yellow-passive; }
 .bg-infos { background: @color-red-passive; }
 .bg-contact { background: @color-green-passive; }
+.bg-header { background: @color-yellow-active; }
 .bg-footer--pre { background: @color-bluegrey; }
 .bg-footer { background: @color-grey-passive; }
 
@@ -16,6 +17,26 @@
             .image {
                 height: 40px;
             }
+        }
+    }
+
+    .logo--cropper {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background: white;
+
+        img {
+            display: inline;
+            margin: 13px auto 0 4px;
+            height: 70px;
+            width: auto;
         }
     }
 }
