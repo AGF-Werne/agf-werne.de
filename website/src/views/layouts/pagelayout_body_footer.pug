@@ -1,6 +1,18 @@
 // layout/pagelayout_body_footer
 block footer
   - var location_url = "https://www.google.de/maps/place/Burgstra%C3%9Fe+22,+59368+Werne/@51.6637128,7.6302543,17z/data=!3m1!4b1!4m5!3m4!1s0x47b90c3c8df7e607:0xfe95b6c922aedf16!8m2!3d51.6637128!4d7.632443"
+  footer.footer--pre.bg-footer--pre.mt-5
+    div.container.text-center.pt-5.pb-5
+      div.lead.text-white Folgen Sie uns auf <b><i>Facebook</i></b> oder schreiben uns einfach eine <b><i>E-Mail</i></b>!
+      div.agf-contact.p-2.fa-5x
+        a(href=url_facebook, target="_blank", data-toggle="tooltip", data-placement="bottom", title="Facebook")
+          span.fa-layers.fa-fw
+            i.fas.fa-circle.c-facebook
+            i.fab.fa-facebook-f.text-white(data-fa-transform="shrink-6")
+        a(href=url_email, target="_top", data-toggle="tooltip", data-placement="bottom", title="E-Mail")
+          span.fa-layers.fa-fw
+            i.fas.fa-circle.c-about
+            i.far.fa-envelope.text-white(data-fa-transform="shrink-6")        
   footer.footer.bg-footer
     div.container.pt-5.pb-5
       div.row.text-white
