@@ -5,27 +5,7 @@ block title
 
 block content
   // contact
-  div.jumbotron.jumbotron-fluid.jumbotron-with-bg(style='background-image: url("./img/kerstin_und_niebuhr.jpg");')
-    div.container.p-5.p-5
-      nav(aria-label="breadcrumb")
-        ol.breadcrumb.p-0
-          li.breadcrumb-item
-            a(href="index.html") Startseite
-      div.row
-        div.col
-          div.pb-5
-            div <strong>Arbeitsgemeinschaft Fl&uuml;chtlinge Werne e.V.</strong>
-            div Burgstraße 22
-            div 59368 Werne
-            div <abbr title="Phone">Tel:</abbr> <a href="tel:+4923899245582">+49 (0)2389 9245582</a>
-            div <abbr title="Email">E-Mail:</abbr> <a href="mailto:agfwerne@gmx.de">agfwerne@gmx.de</a> 
-        div.col
-          div.pb-5
-            div Öffnungszeiten:
-            div Montag bis Donnerstag
-            div 14.00 – 16.00 Uhr       
-  div.embed-responsive.embed-responsive-21by9
-    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.79270306946!2d7.630288515708973!3d51.66363167966106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b90c3c8df7e607%3A0xfe95b6c922aedf16!2sBurgstra%C3%9Fe+22%2C+59368+Werne!5e0!3m2!1sde!2sde!4v1493556754021", frameborder="0", style="border:0", allowfullscreen)
+  - var location_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.79270306946!2d7.630288515708973!3d51.66363167966106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b90c3c8df7e607%3A0xfe95b6c922aedf16!2sBurgstra%C3%9Fe+22%2C+59368+Werne!5e0!3m2!1sde!2sde!4v1493556754021"
   h2.mt-5 Belegungsplan
   div.mt-3.table-responsive
     table.table.table-bordered
@@ -78,4 +58,6 @@ block content
           td 
           td 
           td
+  div.embed-responsive.embed-responsive-21by9
+    iframe(src!=location_url, frameborder="0", style="border:0", allowfullscreen)
   // / contact
