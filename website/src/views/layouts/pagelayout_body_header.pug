@@ -3,13 +3,37 @@ block header
   - var url_homepage = "index.html"
   - var url_facebook = "https://www.facebook.com/AGFWerne"
   - var url_email = "mailto:agfwerne@gmx.de"
-  hader.header.bg-header
+  header.header
     div.container
-      div.d-flex.justify-content-between
+      div.d-flex.justify-content-between.pt-3.pb-3
         div.p-2
-          div.logo--cropper
-            img.image.h-1(src="img/agf-logo-sm.png", data-toggle="tooltip", data-placement="bottom", title="Startseite")/
-        div.p-2 dsd
+          a(href="./index.html")
+            div.logo--cropper(data-toggle="tooltip", data-placement="bottom", title="Startseite")
+              img.image.h-1(src="img/agf-logo-sm.png")/
+        div.p-2
+          div.header-navigation.d-flex.justify-content-end.pt-5
+            a(href="./projects.html")
+              div.bg-projects.pl-4.pr-4.pb-1.ml-3 Unsere&nbsp;Arbeit
+            a(href="./about.html")
+              div.bg-about.pl-4.pr-4.pb-1.ml-3 Der Verein
+            a(href="./infos.html")
+              div.bg-infos.pl-4.pr-4.pb-1.ml-3 Infos
+            a(href="./contact.html")
+              div.bg-contact.pl-4.pr-4.pb-1.ml-3 B-Treff
+        //- div.p-2
+        //-   ul.header-navigation
+        //-     li.bg-projects
+        //-       a(href="#") Unsere&nbsp;Arbeit
+
+        //-     li.bg-about
+        //-       a(href="#") Infos
+
+        //-     li.bg-infos
+        //-       a(href="#") Der Verein
+
+        //-     li.bg-contact
+        //-       a(href="#") B-Treff
+
   //- header.container.header
   //-   div.d-sm-flex.justify-content-between
   //-     div.agf-logo.p-2.mt-3
