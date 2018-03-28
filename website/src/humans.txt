@@ -5,6 +5,7 @@ Location: Werne an der Lippe, Germany
 
 /* THANKS */
 Name: Ulla Rinnen
+Name Anne Zimmermann
 
 /* SITE */
 Last update: 2018
